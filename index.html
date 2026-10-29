@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Escena 3D</title> <!-- Título igual al del profesor -->
+    <style>
+        body { margin: 0; overflow: hidden; } /* Quita márgenes y barras de scroll */
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <!-- El importmap es la forma moderna de cargar Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.154.0/build/three.module.js"
+            }
+        }
+    </script>
+    <!-- Cargamos nuestro script principal como un módulo -->
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
